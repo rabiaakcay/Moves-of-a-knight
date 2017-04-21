@@ -1,7 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <conio.h>
-
-//void ch(int i,int j,int a[8][8]);
 
 int main()
 {
@@ -48,10 +47,8 @@ int main()
  if((ith>0 && jth>0)&&(ith<=8 && jth<=8))
   {
     printf("Possible moves of a knight:\n\n");
-    void ch(int i,int j,int a[8][8]) ;
     
-    
-     /*  if((ith>=0 && jth-3<8 && jth-3>=0 && ith<8) && (a[ith][jth-3]==0))
+                if((ith>=0 && jth-3<8 && jth-3>=0 && ith<8) && (a[ith][jth-3]==0))
             {
                 counter++;
                 a[ith][jth-3]=counter;
@@ -105,10 +102,10 @@ int main()
 		       { 
 		      	a[i][j] ;
 		      	a[ith-1][jth-1]=1;
-			    printf("%5d",a[i][j]);
-               }
+		        printf("%5d",a[i][j]);
+                       }
                 printf("\n\n");
-            }*/
+              }
   }
 
    else
@@ -118,78 +115,6 @@ int main()
 
 return 0;
  }
- void ch(int i,int j,int  a[8][8])
-{
-	int ith,jth,counter=0;
-	 if((ith>0 && jth>0)&&(ith<=8 && jth<=8))
-  {
-    printf("Possible moves of a knight:\n\n");
-   
-      if((ith>=0 && jth-3<8 && jth-3>=0 && ith<8) && (a[ith][jth-3]==0))
-            {
-                counter++;
-                a[ith][jth-3]=counter;
-            }
-		
-		 if((ith>=0 && jth+1<8 && ith<8 && jth+1>=0)&&(a[ith][jth+1]==0))
-          {
-	         counter++;
-     		 a[ith][jth+1]=counter;
-          }
-         
-		 if((ith+1>=0 && jth<8  && ith+1<8 ) && (a[ith+1][jth]==0))
-          {
-	         counter++;
-     		 a[ith+1][jth]=counter;
-          }
-          
-         if((ith+1>=0 && jth-2<8 && jth-2>=0 && ith+1<8) && (a[ith+1][jth-2]==0))
-          {
-	          counter++;
-     	   	  a[ith+1][jth-2]=counter;
-          }
-          
-          if((ith-3>=0 && jth<8 && ith-3<8 ) && (a[ith-3][jth]==0))
-          {
-	         counter++;
-     	   	 a[ith-3][jth]=counter;
-          }
-          
-		  if((ith-3>=0 && jth-2<8 && ith-3<8 && jth-2>=0) && (a[ith-3][jth-2]==0))
-	      {
-	         counter++;
-     		 a[ith-3][jth-2]=counter;
-          }
-         
-		  if((ith-2>=0 && jth+1<8 && ith-2<8 ) && (a[ith-2][jth+1]==0))
-          {
-	          counter++;
-     	   	  a[ith-2][jth+1]=counter;
-          }
-          
-		  if((ith-2>=0 && jth-3<8 && ith-2<8 && jth-3>=0) && (a[ith-2][jth-3]==0))
-          {
-	        counter++;
-			a[ith-2][jth-3]=counter;
-	    }
-	  }}
-   /*        for(i=0;i<8;i++)
-	       {
-		       for(j=0;j<8;j++)
-		       { 
-		      	a[i][j] ;
-		      	a[ith-1][jth-1]=1;
-			    printf("%5d",a[i][j]);
-               }
-                printf("\n\n");
-            }
-  }
 
-   else
-         {
-	       printf("Location is out of chessboard");
-         } 
-
-}*/
 
 
